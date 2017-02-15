@@ -18,6 +18,7 @@
 
       chrome.runtime.sendMessage({message: words}, function(response) {
         var data = response.data;
+        closeOverlay();
         var temp_div = document.createElement("div");
         temp_div.setAttribute("id","jex-temp-div");
         if (data !== null) {
@@ -53,13 +54,20 @@
             }
             var temp_m = document.createElement("div");
             temp_m.setAttribute("class","jex-meanings");
-            meanings = meanings ? meanings.join(", ") : "";
-            temp_m.innerText = i+1 + ".   " + meanings;
-            temp_div.appendChild(temp_m);
-            var temp_t = document.createElement("div");
+            var temp_number = document.createElement("span");
+            temp_number.setAttribute("class","jex-numbering");
+            temp_number.innerText = i+1+".";
+            var temp_inline = document.createElement("span");
+            temp_inline.setAttribute("class","jex-inline");
+            temp_inline.innerText = meanings ? meanings.join(", ") : "";;
+            temp_m.appendChild(temp_number);
+            temp_m.appendChild(temp_inline);
+            var temp_t = document.createElement("span");
             temp_t.setAttribute("class","jex-tags");
             temp_t.innerText = tags ? tags.join(", ") : "";
-            temp_div.appendChild(temp_t);
+            temp_m.appendChild(temp_t);
+
+            temp_div.appendChild(temp_m);
           }
         } else {
           var temp_stat = document.createElement("div");
