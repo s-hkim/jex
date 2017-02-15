@@ -1,0 +1,80 @@
+
+body {
+  padding: 4px;
+  width: 400px;
+  font-family: "Helvetica Neue", Helvetica, Arial, "HiraKakuPro-W3", "Hiragino Kaku Gothic Pro W3", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", Meiryo, "游ゴシック", YuGothic, "ＭＳ Ｐゴシック", "MS PGothic", "ＭＳ ゴシック", "MS Gothic", sans-serif;
+  font-size: 100%;
+  text-align: center;
+  color: #222;
+}
+a:link, a:visited {
+	font-weight: bold;
+	text-decoration: none;
+	color: rgba(0,0,0,0.5);
+}
+a:hover, a:focus, a:active {
+	text-decoration: underline;
+	color: rgba(0,0,0,0.5);
+}
+footer {
+  margin-top: 10px;
+}
+#form {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+}
+#query-field {
+  width: 90%;
+}
+#define-button {
+  padding: 3px 5px 1px 5px;
+  border: solid 1px;
+  background: #eee;
+  color: #555;
+  border-radius: 0 1px 1px 0;
+}
+#query-field:focus {
+  outline: none;
+}
+#define-button:focus {
+  outline: none;
+  background: #ccc;
+}
+#search-icon {
+  width: 13px;
+  height: 13px;
+}
+#status {
+  white-space: pre;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-width: 400px;
+  display: none;
+}
+#definition {
+  display: none;
+}
+#reading {
+
+}
+#word {
+  font-size: 200%;
+}
+.meanings {
+  margin-top: 5px;
+}
+.parts-of-speech {
+  color: #999;
+  text-align: left;
+}
+.tags {
+  font-style: italic;
+  font-size: 90%;
+  color: #999;
+}
+#more {
+  margin: 10px 0 5px 0;
+  font-style: italic;
+  font-size: 85%;
+}

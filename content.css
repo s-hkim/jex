@@ -1,0 +1,34 @@
+.jex-overlay {
+  display: none;
+  position: fixed;
+  background: #fff;
+  top: 0;
+  left: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, "HiraKakuPro-W3", "Hiragino Kaku Gothic Pro W3", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", Meiryo, "游ゴシック", YuGothic, "ＭＳ Ｐゴシック", "MS PGothic", "ＭＳ ゴシック", "MS Gothic", sans-serif;
+  /*font-size: 100%;*/
+  /*text-align: center;*/
+  color: #222;
+  border: solid 1px #999;
+  border-radius: 5px;
+  padding: 10px;
+  min-width: 100px;
+}
+#jex-reading {
+  font-size: 70%;
+  text-align: center;
+}
+#jex-word {
+  text-align: center;
+}
+.jex-meanings {
+  margin-top: 3px;
+  font-size: 90%;
+}
+.jex-parts-of-speech {
+  color: #999;
+}
+.jex-tags {
+  font-style: italic;
+  font-size: 90%;
+  color: #999;
+}
