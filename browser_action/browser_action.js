@@ -77,5 +77,6 @@
       define();
     }
   });
+  query_field.focus();
 
 })();
