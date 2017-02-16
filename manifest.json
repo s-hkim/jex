@@ -16,6 +16,13 @@
       "css": [ "content/content.css" ]
     }
   ],
+  "commands": {
+    "_execute_browser_action": {
+      "suggested_key": {
+        "default": "Alt+J"
+      }
+    }
+  },
    "description": "Look up words on Jisho",
    "icons": {
       "16": "static/icon16.png",
